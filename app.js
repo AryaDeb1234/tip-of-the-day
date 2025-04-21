@@ -14,6 +14,8 @@ let isLoading = false; // This flag prevents overlapping requests
 let idx;
 async function func() {
     let response = await fetch(url);
+    console.log(response);
+    
     let x = await response.json();
     let data = JSON.parse(x.contents);
     
